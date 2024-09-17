@@ -109,22 +109,3 @@
 
 // 9.Write a program to find the largest number
 // in a given array.
-function 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

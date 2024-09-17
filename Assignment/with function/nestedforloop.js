@@ -84,18 +84,103 @@
 // }
 // patt(5,5)
 
-function patt(r){
-    for(let i=1;i<=r;i++){
-        let space='';
-        for(let j=1;j<=r-i;j++){
-            space= space+'   '
-        }
-        let start='';
+// 5.Write a program to print a pyramid pattern of stars:
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+// function patt(r){
+//     for(let i=1;i<=r;i++){
+//         let space='';
+//         for(let j=1;j<=r-i;j++){
+//             space= space+' '
+//         }
+//         let start='';
     
-        for(let k=0;k<i*2-1;k++){
-            start=start+' * '
+//         for(let k=0;k<i*2-1;k++){
+//             start=start+'*'
+//         }
+//         console.log(space,start);
+//     }
+// }
+// patt(5)
+
+// que by sir
+// function tab(r,c){
+//     for(let i=r;i<=c;i++){
+//         let  bag=''
+//         for(let j=1;j<=10;j++){
+//             bag+=i*j +' '
+            
+//         }
+//         console.log(`table of ${i} is ${bag}`);
+//     }
+// }
+// tab(2,5)
+
+// 7.Create a program to print a diamond shape pattern:
+// *
+// ***
+// *****
+// *******
+// *****
+// ***
+// *
+// function patt(r){
+//     for(let i=1;i<r;i++){
+//         let space='';
+//         for(let j=1;j<=r-i;j++){
+//             space= space+' '
+//         }
+//         let start='';
+    
+//         for(let k=0;k<i*2-1;k++){
+//             start=start+'*'
+//         }
+//         console.log(space,start);
+//     }
+//     for(let i=r;i>=1;i--){
+//         let space='';
+//         for(let j=1;j<=r-i;j++){
+//             space= space+' '
+//         }
+//         let start='';
+    
+//         for(let k=0;k<i*2-1;k++){
+//             start=start+'*'
+//         }
+//         console.log(space,start);
+//     }
+// }
+//  patt(5)
+// 9.Write a program to print a hollow square pattern with stars:
+// *****
+// *   *
+// *   *
+// *   *
+// *****
+function patt(r,c){
+    for(let i=0;i<1;i++){
+        let bag=''
+        for(let j=0;j<c;j++){
+            bag= bag+'*'
         }
-        console.log(space,start);
+        console.log(bag)
+    }
+    for(let i=0;i<r;i++){
+        let bag2=''
+        for(let j=0;j<1;j++){
+            bag2= bag2+'*'+'     '+'*'
+        }
+        console.log(bag2);
+    }
+    for(let i=0;i<1;i++){
+        let bag=''
+        for(let j=0;j<c;j++){
+            bag= bag+'*'
+        }
+        console.log(bag)
     }
 }
-patt(5)
+patt(5,7)
